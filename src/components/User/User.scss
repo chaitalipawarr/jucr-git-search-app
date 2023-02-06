@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.user-card {
+  margin-bottom: 20px;
+
+  &__link {
+    text-decoration: none;
+    color: $gray-text;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    &__image {
+      border: 1px solid transparent;
+      border-radius: 25px;
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    &__name {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

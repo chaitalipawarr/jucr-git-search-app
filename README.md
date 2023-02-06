@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with JUCR App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project resembles Github search functionality with custom search. This React app is responsive and unit tested.
 
 ## Available Scripts
 
@@ -16,31 +16,23 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
-### `npm run build`
+## Steps for Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Create a GitHub repository for the app and push the code to it.
+2. Create a new file in the .github/workflows directory in the repository, with a .yml extension. This file will define the workflow for deploying the app.
+3. In the workflow file, specify the steps for building and deploying the app. For example, you could use the steps to deploy to GitHub Pages.
+4. Add the ACCESS_TOKEN secret to the GitHub repository. This will allow the workflow to authenticate with GitHub and deploy the app to GitHub Pages.
+5. Commit and push the changes to the repository. This will trigger the workflow and deploy the app to GitHub Pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is just one example of how to deploy a React app using GitHub Actions. There are many other deployment options available, including AWS S3, Firebase, and more. We can choose the deployment option that best fits your needs and adjust the workflow steps accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Assumptions:
 
-### `npm run eject`
+1. This app currently supports search functionality only for User and Repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Improvement:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. This app can be extended to support other tabs like Issues, Commits, Discussions etc.
+2. Unit test and code coverage can be improved further.

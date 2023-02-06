@@ -1,0 +1,21 @@
+.App {
+  background-color: #f6f8ff;
+  box-sizing: border-box;
+  height: 100%;
+
+  &__header {
+    background-color: #282c34;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #61dafb;
+    padding-left: 20px;
+
+    &__logo {
+      height: 30px;
+      pointer-events: none;
+    }
+  }
+}

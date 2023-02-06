@@ -1,0 +1,27 @@
+@import "../../variables";
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+  &__border {
+    width: 40px;
+    height: 40px;
+    border: 5px solid $gray-spinner-border;
+    border-bottom-color: $light-blue;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+  }
+}

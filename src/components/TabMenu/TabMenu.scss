@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.tab-menu {
+  list-style: none;
+  padding: 0;
+  background-color: $white;
+  display: flex;
+  border-bottom: 1px solid $white-border;
+
+  &__list {
+    padding: 20px;
+    margin-right: 2px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+
+    &.active {
+      color: $light-blue;
+      cursor: default;
+      background-color: $white;
+      border: 1px solid $white-border;
+      border-bottom-color: transparent;
+    }
+  }
+}
